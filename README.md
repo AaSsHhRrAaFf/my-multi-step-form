@@ -1,36 +1,160 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Multi-Step Form
+
+A modern, responsive multi-step form built with Next.js and Tailwind CSS. This form provides a smooth user experience with step-by-step progression, form validation, and a clean UI with dark mode support.
+
+![Multi-Step Form Screenshot](https://placeholder.svg?height=400&width=800)
+
+## Features
+
+- 📱 Fully responsive design
+- 🌙 Dark mode support
+- ✅ Form validation with React Hook Form and Zod
+- 🔄 Multi-step progression with visual indicators
+- 🔒 Password strength meter
+- 👁️ Password visibility toggle
+- 📊 Form submission handling with React Query
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [React Hook Form](https://react-hook-form.com/) - Form validation
+- [Zod](https://github.com/colinhacks/zod) - TypeScript-first schema validation
+- [React Query](https://tanstack.com/query/latest) - Data fetching and state management
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
+- Node.js 16.8.0 or later
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+\`\`\`bash
+git clone https://github.com/yourusername/multi-step-form.git
+cd multi-step-form
+\`\`\`
+
+2. Install dependencies:
+
+\`\`\`bash
+npm install
+# or
+yarn install
+\`\`\`
+
+### Running the Project
+
+To run the development server:
+
+\`\`\`bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+\`\`\`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create a production build:
 
-## Learn More
+\`\`\`bash
+npm run build
+# or
+yarn build
+\`\`\`
 
-To learn more about Next.js, take a look at the following resources:
+To start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+\`\`\`bash
+npm run start
+# or
+yarn start
+\`\`\`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+\`\`\`
+multi-step-form/
+├── app/
+│   ├── globals.css        # Global styles
+│   └── layout.js          # Root layout
+├── components/
+│   ├── MultiStepForm.jsx  # Main form component
+│   ├── Step1.jsx          # Personal information form
+│   ├── Step2.jsx          # Address details form
+│   ├── Step3.jsx          # Account setup form
+│   └── Summary.jsx        # Form summary component
+├── public/
+│   └── ...                # Static assets
+├── tailwind.config.js     # Tailwind configuration
+├── next.config.js         # Next.js configuration
+└── package.json           # Project dependencies
+\`\`\`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Form Steps
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Personal Information**
+   - Full Name
+   - Email
+   - Phone Number
+
+2. **Address Details**
+   - Street Address
+   - City
+   - Zip Code
+
+3. **Account Setup**
+   - Username
+   - Password (with strength indicator)
+   - Confirm Password
+
+4. **Summary**
+   - Review all information
+   - Submit form
+
+## Form Validation
+
+The form uses Zod for schema validation with the following rules:
+
+- Full Name: Required
+- Email: Valid email format
+- Phone Number: At least 10 digits
+- Street Address: Required
+- City: Required
+- Zip Code: At least 5 digits
+- Username: At least 4 characters
+- Password: At least 6 characters
+- Confirm Password: Must match password
+
+## Customization
+
+### Styling
+
+The form uses Tailwind CSS for styling. You can customize the appearance by:
+
+1. Modifying the color scheme in `globals.css`
+2. Adjusting the Tailwind configuration in `tailwind.config.js`
+3. Updating component styles directly in their respective files
+
+### Form Fields
+
+To add or modify form fields:
+
+1. Update the Zod schema in `MultiStepForm.jsx`
+2. Modify the relevant step component
+3. Update the summary component to display the new fields
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [React Hook Form Documentation](https://react-hook-form.com/get-started)

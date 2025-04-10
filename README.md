@@ -1,160 +1,46 @@
 # Multi-Step Form
 
-A modern, responsive multi-step form built with Next.js and Tailwind CSS. This form provides a smooth user experience with step-by-step progression, form validation, and a clean UI with dark mode support.
+A sleek and responsive multi-step form built using **Next.js** and **Tailwind CSS**. Designed to offer a smooth user experience with dynamic form progression, real-time validation, and modern UI elements including dark mode support. Ideal for collecting user data in a structured and engaging way.
 
-![Multi-Step Form Screenshot](https://placeholder.svg?height=400&width=800)
 
-## Features
 
-- 📱 Fully responsive design
-- 🌙 Dark mode support
-- ✅ Form validation with React Hook Form and Zod
-- 🔄 Multi-step progression with visual indicators
-- 🔒 Password strength meter
-- 👁️ Password visibility toggle
-- 📊 Form submission handling with React Query
+---
 
-## Technologies Used
+## ✨ Features
 
-- [Next.js](https://nextjs.org/) - React framework
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- [React Hook Form](https://react-hook-form.com/) - Form validation
-- [Zod](https://github.com/colinhacks/zod) - TypeScript-first schema validation
-- [React Query](https://tanstack.com/query/latest) - Data fetching and state management
+- 📱 **Responsive Layout** – Perfectly adapts across mobile, tablet, and desktop devices.
+- 🌙 **Dark Mode** – Built-in dark mode for enhanced accessibility and user comfort.
+- ✅ **Form Validation** – Integrated with **React Hook Form** and **Zod** for accurate and type-safe input validation.
+- 🔄 **Step Navigation** – Users can move through a clearly defined step-by-step process.
+- 🔒 **Password Strength Indicator** – Guides users to create stronger, more secure passwords.
+- 👁️ **Toggle Password Visibility** – Allows users to show/hide password input.
+- 🚀 **Smooth Submission** – Efficiently handled with **React Query** for a better user experience.
 
-## Getting Started
+---
 
-### Prerequisites
+## 🛠️ Tech Stack
 
-- Node.js 16.8.0 or later
-- npm or yarn
+- **[Next.js](https://nextjs.org/)** – React framework for server-side rendering and routing.
+- **[Tailwind CSS](https://tailwindcss.com/)** – Utility-first CSS framework for rapid UI development.
+- **[React Hook Form](https://react-hook-form.com/)** – Performant, flexible forms with minimal re-renders.
+- **[Zod](https://github.com/colinhacks/zod)** – Type-safe schema validation.
+- **[React Query](https://tanstack.com/query/latest)** – Powerful data fetching and caching solution.
 
-### Installation
+---
 
-1. Clone the repository:
+## 🚀 Getting Started
 
-\`\`\`bash
-git clone https://github.com/yourusername/multi-step-form.git
-cd multi-step-form
-\`\`\`
+### ✅ Prerequisites
 
-2. Install dependencies:
+Make sure you have the following installed:
 
-\`\`\`bash
-npm install
-# or
-yarn install
-\`\`\`
+- **Node.js** v16.8.0 or later
+- **npm** or **yarn** package manager
 
-### Running the Project
+### 📦 Installation
 
-To run the development server:
+1. **Clone the repository**
 
-\`\`\`bash
-npm run dev
-# or
-yarn dev
-\`\`\`
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-### Building for Production
-
-To create a production build:
-
-\`\`\`bash
-npm run build
-# or
-yarn build
-\`\`\`
-
-To start the production server:
-
-\`\`\`bash
-npm run start
-# or
-yarn start
-\`\`\`
-
-## Project Structure
-
-\`\`\`
-multi-step-form/
-├── app/
-│   ├── globals.css        # Global styles
-│   └── layout.js          # Root layout
-├── components/
-│   ├── MultiStepForm.jsx  # Main form component
-│   ├── Step1.jsx          # Personal information form
-│   ├── Step2.jsx          # Address details form
-│   ├── Step3.jsx          # Account setup form
-│   └── Summary.jsx        # Form summary component
-├── public/
-│   └── ...                # Static assets
-├── tailwind.config.js     # Tailwind configuration
-├── next.config.js         # Next.js configuration
-└── package.json           # Project dependencies
-\`\`\`
-
-## Form Steps
-
-1. **Personal Information**
-   - Full Name
-   - Email
-   - Phone Number
-
-2. **Address Details**
-   - Street Address
-   - City
-   - Zip Code
-
-3. **Account Setup**
-   - Username
-   - Password (with strength indicator)
-   - Confirm Password
-
-4. **Summary**
-   - Review all information
-   - Submit form
-
-## Form Validation
-
-The form uses Zod for schema validation with the following rules:
-
-- Full Name: Required
-- Email: Valid email format
-- Phone Number: At least 10 digits
-- Street Address: Required
-- City: Required
-- Zip Code: At least 5 digits
-- Username: At least 4 characters
-- Password: At least 6 characters
-- Confirm Password: Must match password
-
-## Customization
-
-### Styling
-
-The form uses Tailwind CSS for styling. You can customize the appearance by:
-
-1. Modifying the color scheme in `globals.css`
-2. Adjusting the Tailwind configuration in `tailwind.config.js`
-3. Updating component styles directly in their respective files
-
-### Form Fields
-
-To add or modify form fields:
-
-1. Update the Zod schema in `MultiStepForm.jsx`
-2. Modify the relevant step component
-3. Update the summary component to display the new fields
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [React Hook Form Documentation](https://react-hook-form.com/get-started)
+   ```bash
+   git clone https://github.com/AaSsHhRrAaFf/my-multi-step-form.git
+   cd my-multi-step-form
